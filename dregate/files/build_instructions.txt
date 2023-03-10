@@ -1,0 +1,3 @@
+driver cant be in a path with spaces
+edit drv.bat with your ddk path
+execute drv.bat

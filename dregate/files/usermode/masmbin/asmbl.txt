@@ -1,0 +1,9 @@
+ Assembling: C:\dregate\cagrackme\files\cagrackme.asm
+ Volume in drive C has no label.
+ Volume Serial Number is 503F-77AB
+
+ Directory of C:\dregate\cagrackme\files
+
+08/13/2022  01:06 PM             2,805 cagrackme.asm
+               1 File(s)          2,805 bytes
+               0 Dir(s)  20,789,227,520 bytes free

@@ -1,0 +1,630 @@
+00000000000i[      ] Bochs x86 Emulator 2.7
+00000000000i[      ]   Built by Dreg https://github.com/therealdreg/dregate
+00000000000i[      ]   Timestamp: Sun Aug  1 10:07:00 CEST 2021
+00000000000i[      ] System configuration
+00000000000i[      ]   processors: 1 (cores=1, HT threads=1)
+00000000000i[      ]   A20 line support: yes
+00000000000i[      ]   load configurable MSRs from file "msrs.def"
+00000000000i[      ] IPS is set to 50000000
+00000000000i[      ] CPU configuration
+00000000000i[      ]   SMP support: no
+00000000000i[      ]   Using pre-defined CPU configuration: core2_penryn_t9600
+00000000000i[      ] Optimization configuration
+00000000000i[      ]   RepeatSpeedups support: yes
+00000000000i[      ]   Fast function calls: yes
+00000000000i[      ]   Handlers Chaining speedups: yes
+00000000000i[      ] Devices configuration
+00000000000i[      ]   PCI support: i440FX i430FX i440BX
+00000000000i[      ]   Network devices support: NE2000 E1000
+00000000000i[      ]   Sound support: SB16 ES1370
+00000000000i[      ]   USB support: UHCI OHCI EHCI xHCI
+00000000000i[      ]   VGA extension support: vbe cirrus voodoo
+00000000000i[IMG   ] Disk image modules
+00000000000i[IMG   ]   flat concat sparse dll growing undoable volatile vmware3
+00000000000i[IMG   ]   vmware4 vbox vpc vvfat
+00000000000i[NETCTL] Networking modules
+00000000000i[NETCTL]   null vnet slirp socket win32
+00000000000i[SNDCTL] Sound drivers
+00000000000i[SNDCTL]   dummy file win
+00000000000i[USBCTL] Pluggable USB devices
+00000000000i[USBCTL]   floppy mouse tablet keypad keyboard hub disk cdrom
+00000000000i[USBCTL]   printer
+00000000000i[MEM0  ] allocated memory at 000001FE2D6DA040. after alignment, vector=000001FE2D6DB000
+00000000000i[MEM0  ] 1024.00MB
+00000000000i[MEM0  ] mem block size = 0x00020000, blocks=8192
+00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('BIOS-bochs-latest')
+00000000000i[CPU0  ] loaded MSR[0x02c] type=0 00000000:00000000 00000000:00000000 00000000:00000000
+00000000000i[DEV   ] will paste characters every 100 iodev timer ticks
+00000000000i[PLUGIN] init_dev of 'pci' plugin device by virtual method
+00000000000i[DEV   ] i440FX PMC present at device 0, function 0
+00000000000i[PLUGIN] init_dev of 'pci2isa' plugin device by virtual method
+00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
+00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
+00000000000i[CMOS  ] Using local time for initial clock
+00000000000i[CMOS  ] Setting initial clock to: Thu Aug 25 03:35:31 2022 (time0=1661391331)
+00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
+00000000000i[DMA   ] channel 4 used by cascade
+00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'vga' plugin device by virtual method
+00000000000i[MEM0  ] Register memory access handlers: 0x0000000a0000 - 0x0000000bffff
+00000000000i[VGA   ] interval=200000, mode=realtime
+00000000000i[VGA   ] VSYNC using standard mode
+00000000000i[MEM0  ] Register memory access handlers: 0x0000e0000000 - 0x0000e0ffffff
+00000000000i[BXVGA ] VBE Bochs Display Extension Enabled
+00000000000i[WINGUI] Desktop window dimensions: 1536 x 864
+00000000000i[WINGUI] Number of Mouse Buttons = 5
+00000000000i[WINGUI] IME disabled
+00000000000i[MEM0  ] rom at 0xc0000/38400 ('VGABIOS-lgpl-latest')
+00000000000i[PLUGIN] init_dev of 'floppy' plugin device by virtual method
+00000000000i[DMA   ] channel 2 used by Floppy Drive
+00000000000i[FLOPPY] Using boot sequence cdrom, disk, none
+00000000000i[FLOPPY] Floppy boot signature check is enabled
+00000000000i[PLUGIN] init_dev of 'acpi' plugin device by virtual method
+00000000000i[DEV   ] ACPI Controller present at device 1, function 3
+00000000000i[PLUGIN] init_dev of 'hpet' plugin device by virtual method
+00000000000i[HPET  ] initializing HPET
+00000000000i[MEM0  ] Register memory access handlers: 0x0000fed00000 - 0x0000fed003ff
+00000000000i[PLUGIN] init_dev of 'ioapic' plugin device by virtual method
+00000000000i[IOAPIC] initializing I/O APIC
+00000000000i[MEM0  ] Register memory access handlers: 0x0000fec00000 - 0x0000fec00fff
+00000000000i[IOAPIC] IOAPIC enabled (base address = 0xfec00000)
+00000000000i[PLUGIN] init_dev of 'keyboard' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'harddrv' plugin device by virtual method
+00000000000i[HD    ] HD on ata0-0: 'winxp.img', 'flat' mode
+00000000000i[IMG   ] hd_size: 5368430592
+00000000000i[HD    ] ata0-0: autodetect geometry: CHS=10402/16/63 (sector size=512)
+00000000000i[HD    ] HD on ata0-1: 'sharedfolder', 'vvfat' mode
+00000000000i[IMG   ] redolog : Standard Header : magic='Bochs Virtual HD Image', type='Redolog', subtype='Volatile', version = 2.0
+00000000000i[IMG   ] redolog : Specific Header : #entries=8192, bitmap size=16, exent size = 65536 disk size = 528482304
+00000000000i[IMG   ] 'vvfat' disk opened: directory is 'sharedfolder', redolog is 'vvfat.redolog.a10372'
+00000000000i[HD    ] ata0-1: image geometry: CHS=1024/16/63 (sector size=512)
+00000000000i[HD    ] translation on ata0-0 set to 'lba'
+00000000000i[HD    ] translation on ata0-1 set to 'none'
+00000000000i[PLUGIN] init_dev of 'pci_ide' plugin device by virtual method
+00000000000i[DEV   ] PIIX3 PCI IDE controller present at device 1, function 1
+00000000000i[PLUGIN] init_dev of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'speaker' plugin device by virtual method
+00000000000i[PCSPK ] Using lowlevel sound support for output
+00000000000i[PLUGIN] init_dev of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'parallel' plugin device by virtual method
+00000000000i[PAR   ] parallel port 1 at 0x0378 irq 7
+00000000000i[PLUGIN] init_dev of 'serial' plugin device by virtual method
+00000000000i[SER   ] com1 at 0x03f8 irq 4 (mode: null)
+00000000000i[PLUGIN] init_dev of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] init_dev of 'usb_uhci' plugin device by virtual method
+00000000000i[DEV   ] USB UHCI present at device 1, function 2
+00000000000i[UHCI  ] USB UHCI initialized
+00000000000i[PLUGIN] register state of 'pci' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pci2isa' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'cmos' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'dma' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'vga' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'floppy' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'speaker' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'parallel' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'serial' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'usb_uhci' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'acpi' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'hpet' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'ioapic' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'keyboard' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'harddrv' plugin device by virtual method
+00000000000i[PLUGIN] register state of 'pci_ide' plugin device by virtual method
+00000000000i[SYS   ] bx_pc_system_c::Reset(HARDWARE) called
+00000000000i[CPU0  ] cpu hardware reset
+00000000000i[APIC0 ] allocate APIC id=0 (MMIO enabled) to 0x0000fee00000
+00000000000i[CPU0  ] CPUID[0x00000000]: 0000000d 756e6547 6c65746e 49656e69
+00000000000i[CPU0  ] CPUID[0x00000001]: 0001067a 00010800 0408e3fd afebfbff
+00000000000i[CPU0  ] CPUID[0x00000002]: 05b0b101 005657f0 00000000 2cb4304e
+00000000000i[CPU0  ] CPUID[0x00000003]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000004]: 04000121 01c0003f 0000003f 00000001
+00000000000i[CPU0  ] CPUID[0x00000005]: 00000040 00000040 00000003 03122220
+00000000000i[CPU0  ] CPUID[0x00000006]: 00000003 00000002 00000003 00000000
+00000000000i[CPU0  ] CPUID[0x00000007]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000008]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x00000009]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] WARNING: Architectural Performance Monitoring is not implemented
+00000000000i[CPU0  ] CPUID[0x0000000a]: 07280202 00000000 00000000 00000503
+00000000000i[CPU0  ] CPUID[0x0000000b]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x0000000c]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x0000000d]: 00000003 00000240 00000240 00000000
+00000000000i[CPU0  ] CPUID[0x80000000]: 80000008 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x80000001]: 00000000 00000000 00000001 20100000
+00000000000i[CPU0  ] CPUID[0x80000002]: 65746e49 2952286c 726f4320 4d542865
+00000000000i[CPU0  ] CPUID[0x80000003]: 44203229 43206f75 20205550 54202020
+00000000000i[CPU0  ] CPUID[0x80000004]: 30303639 20402020 30382e32 007a4847
+00000000000i[CPU0  ] CPUID[0x80000005]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x80000006]: 00000000 00000000 18008040 00000000
+00000000000i[CPU0  ] CPUID[0x80000007]: 00000000 00000000 00000000 00000000
+00000000000i[CPU0  ] CPUID[0x80000008]: 00003028 00000000 00000000 00000000
+00000000000i[CPU0  ] CPU Features supported:
+00000000000i[CPU0  ] 		x87
+00000000000i[CPU0  ] 		486ni
+00000000000i[CPU0  ] 		pentium_ni
+00000000000i[CPU0  ] 		p6ni
+00000000000i[CPU0  ] 		mmx
+00000000000i[CPU0  ] 		debugext
+00000000000i[CPU0  ] 		vme
+00000000000i[CPU0  ] 		pse
+00000000000i[CPU0  ] 		pae
+00000000000i[CPU0  ] 		pge
+00000000000i[CPU0  ] 		pse36
+00000000000i[CPU0  ] 		mtrr
+00000000000i[CPU0  ] 		pat
+00000000000i[CPU0  ] 		sysenter_sysexit
+00000000000i[CPU0  ] 		clflush
+00000000000i[CPU0  ] 		sse
+00000000000i[CPU0  ] 		sse2
+00000000000i[CPU0  ] 		sse3
+00000000000i[CPU0  ] 		ssse3
+00000000000i[CPU0  ] 		sse4_1
+00000000000i[CPU0  ] 		mwait
+00000000000i[CPU0  ] 		vmx
+00000000000i[CPU0  ] 		smx
+00000000000i[CPU0  ] 		longmode
+00000000000i[CPU0  ] 		lm_lahf_sahf
+00000000000i[CPU0  ] 		nx
+00000000000i[CPU0  ] 		cmpxhg16b
+00000000000i[CPU0  ] 		xsave
+00000000000i[CPU0  ] 		xapic
+00000000000i[PLUGIN] reset of 'pci' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pci2isa' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'cmos' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'dma' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pic' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pit' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'vga' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'floppy' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'acpi' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'hpet' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'ioapic' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'keyboard' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'harddrv' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'pci_ide' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'unmapped' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'biosdev' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'speaker' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'extfpuirq' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'parallel' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'serial' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'gameport' plugin device by virtual method
+00000000000i[PLUGIN] reset of 'usb_uhci' plugin device by virtual method
+00000004635i[BIOS  ] $Revision: 14314 $ $Date: 2021-07-14 18:10:19 +0200 (Wed, 14 Jul 2021) $
+00000337539i[KBD   ] reset-disable command received
+00000363236i[BIOS  ] Starting rombios32
+00000363677i[BIOS  ] Shutdown flag 0
+00000364265i[BIOS  ] ram_size=0x40000000
+00000364768i[BIOS  ] ram_end=1024MB
+00007881050i[WINGUI] dimension update x=720 y=400 fontheight=16 fontwidth=9 bpp=8
+00011800374i[BIOS  ] Found 1 cpu(s)
+00011813887i[BIOS  ] bios_table_addr: 0x000f9d98 end=0x000fcc00
+00011814133d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00011814133d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00011814155d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00011814155d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00011814203d[PCI   ] read  PCI register 0x59 value 0x00 (len=1)
+00011814203d[PCI   ] write PCI register 0x59 value 0x00 (len=1)
+00012137500d[PCI   ] write PCI register 0x59 value 0x30 (len=1)
+00012137500i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00012469834i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
+00012469866i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
+00012469866i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x0b
+00012469866i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x09
+00012469932i[P2ISA ] write: ELCR2 = 0x0a
+00012470559i[BIOS  ] PIIX3/PIIX4 init: elcr=00 0a
+00012482465d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012482465d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012482498d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012482498d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012482524d[PCI   ] read  PCI register 0x0A value 0x0600 (len=2)
+00012482524d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012482524d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012482556d[PCI   ] read  PCI register 0x0E value 0x00 (len=1)
+00012484030i[BIOS  ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00012484390d[PCI   ] read  PCI register 0x04 value 0x0006 (len=2)
+00012484390d[PCI   ] write PCI register 0x04 value 0x0004 (len=2)
+00012484428d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00012484451d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00012484451d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00012484451d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00012484451d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00012484451d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00012484599d[PCI   ] write PCI register 0x30 value 0xFFFFFFFE (len=4)
+00012484608d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00012484619d[PCI   ] read  PCI register 0x04 value 0x0006 (len=2)
+00012484619d[PCI   ] write PCI register 0x04 value 0x0007 (len=2)
+00012484619d[PCI   ] read  PCI register 0x3D value 0x00 (len=1)
+00012484842d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012484842d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012486374i[BIOS  ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00012487025d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012487025d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012488594i[BIOS  ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00012489128i[PIDE  ] BAR #4: i/o base address = 0xc000
+00012489653i[BIOS  ] region 4: 0x0000c000
+00012489911d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012489911d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012491443i[BIOS  ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
+00012491977i[UHCI  ] BAR #4: i/o base address = 0xc020
+00012492517i[BIOS  ] region 4: 0x0000c020
+00012492746i[UHCI  ] new IRQ line = 9
+00012492790d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012492790d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012494322i[BIOS  ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00012494714i[ACPI  ] new IRQ line = 11
+00012494714i[ACPI  ] new IRQ line = 9
+00012494975i[ACPI  ] new PM base address: 0xb000
+00012495007i[ACPI  ] new SM base address: 0xb100
+00012495007d[PCI   ] write PCI register 0x72 value 0x4A (len=1)
+00012495007i[PCI   ] setting SMRAM control register to 0x4a
+00012659170i[CPU0  ] Enter to System Management Mode
+00012659170i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00012659174i[CPU0  ] RSM: Resuming from System Management Mode
+00012823226d[PCI   ] write PCI register 0x72 value 0x0A (len=1)
+00012823226i[PCI   ] setting SMRAM control register to 0x0a
+00012834763d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00012834763d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00012834810d[PCI   ] read  PCI register 0x0A value 0x0600 (len=2)
+00012834810d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00012849593i[BIOS  ] MP table addr=0x000f9e70 MPC table addr=0x000f9da0 size=0xc8
+00012851460i[BIOS  ] SMBIOS table addr=0x000f9e80
+00012853349i[BIOS  ] ACPI tables: RSDP addr=0x000f9fa0 ACPI DATA addr=0x3fff0000 size=0xff8
+00012856541i[BIOS  ] Firmware waking vector 0x3fff00cc
+00012858947d[PCI   ] read  PCI register 0x59 value 0x30 (len=1)
+00012858947d[PCI   ] write PCI register 0x59 value 0x10 (len=1)
+00012858947i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00012859535i[BIOS  ] bios_table_cur_addr: 0x000f9fc4
+00012977796i[VBIOS ] VGABios $Id: vgabios.c 288 2021-05-28 19:05:28Z vruppert $
+00012977882i[BXVGA ] VBE known Display Interface b0c0
+00012977901i[BXVGA ] VBE known Display Interface b0c5
+00012980542i[VBIOS ] VBE Bios $Id: vbe.c 292 2021-06-03 12:24:22Z vruppert $
+00013209689i[BIOS  ] ata0-0: PCHS=10402/16/63 translation=lba LCHS=652/255/63
+00013250813i[BIOS  ] ata0-1: PCHS=1024/16/63 translation=none LCHS=1024/16/63
+00013318954i[BIOS  ] CDROM boot failure code : 0002
+00013609731i[BIOS  ] Booting from 0000:7c00
+00020292844d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00020292860d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00020293295d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00020293606d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00020566956i[BIOS  ] int13_harddisk: function 15, unmapped device for ELDL=82
+00021390049i[BIOS  ] *** int 15h function AX=e980, BX=0087 not yet supported!
+00033291057d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00033291099d[PCI   ] read  PCI register 0x04 value 0x02800006 (len=4)
+00033291143d[PCI   ] read  PCI register 0x08 value 0x06000000 (len=4)
+00033291187d[PCI   ] read  PCI register 0x0C value 0x00000000 (len=4)
+00033291231d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00033291275d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00033291319d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00033291363d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00033291407d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00033291451d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00033291495d[PCI   ] read  PCI register 0x28 value 0x00000000 (len=4)
+00033291539d[PCI   ] read  PCI register 0x2C value 0x00000000 (len=4)
+00033291583d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00033291627d[PCI   ] read  PCI register 0x34 value 0x00000000 (len=4)
+00033291671d[PCI   ] read  PCI register 0x38 value 0x00000000 (len=4)
+00033291715d[PCI   ] read  PCI register 0x3C value 0x00000000 (len=4)
+00033292013d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00033292057d[PCI   ] read  PCI register 0x04 value 0x02800006 (len=4)
+00033292101d[PCI   ] read  PCI register 0x08 value 0x06000000 (len=4)
+00033292145d[PCI   ] read  PCI register 0x0C value 0x00000000 (len=4)
+00033292189d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00033292233d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00033292277d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00033292321d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00033292365d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00033292409d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00033292453d[PCI   ] read  PCI register 0x28 value 0x00000000 (len=4)
+00033292497d[PCI   ] read  PCI register 0x2C value 0x00000000 (len=4)
+00033292541d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00033292585d[PCI   ] read  PCI register 0x34 value 0x00000000 (len=4)
+00033292629d[PCI   ] read  PCI register 0x38 value 0x00000000 (len=4)
+00033292673d[PCI   ] read  PCI register 0x3C value 0x00000000 (len=4)
+00033292971d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00033293015d[PCI   ] read  PCI register 0x04 value 0x02800006 (len=4)
+00033293059d[PCI   ] read  PCI register 0x08 value 0x06000000 (len=4)
+00033293103d[PCI   ] read  PCI register 0x0C value 0x00000000 (len=4)
+00033293147d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00033293191d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00033293235d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00033293279d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00033293323d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00033293367d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00033293411d[PCI   ] read  PCI register 0x28 value 0x00000000 (len=4)
+00033293455d[PCI   ] read  PCI register 0x2C value 0x00000000 (len=4)
+00033293499d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00033293543d[PCI   ] read  PCI register 0x34 value 0x00000000 (len=4)
+00033293587d[PCI   ] read  PCI register 0x38 value 0x00000000 (len=4)
+00033293631d[PCI   ] read  PCI register 0x3C value 0x00000000 (len=4)
+00096225101i[IOAPIC] IOAPIC: could not write, IOREGSEL=0x01
+00096225457i[IOAPIC] IOAPIC: could not write, IOREGSEL=0x01
+00096225457i[IOAPIC] IOAPIC: could not write, IOREGSEL=0x01
+00096228702e[CPU0  ] WRMSR: Unknown register 0x8b
+00096228735e[CPU0  ] RDMSR: Unknown register 0x8b
+00096252752i[IOAPIC] IOAPIC: setting id to 0x1
+00096253086i[APIC0 ] set timer divide factor to 1
+00096253105i[CPU0  ] WRMSR: write 0x0000000000000000 to MSR_TSC
+00136542435e[CPU0  ] interrupt(): soft_int && (gate.dpl < CPL)
+00155575600i[WINGUI] dimension update x=640 y=480 fontheight=0 fontwidth=0 bpp=8
+00168172879e[CPU0  ] RDMSR: Unknown register 0x179
+00168172881e[CPU0  ] RDMSR: Unknown register 0x400
+00168173397e[CPU0  ] RDMSR: Unknown register 0x179
+00168251249d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00170380992d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00244300039d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00244300084d[PCI   ] read  PCI register 0x04 value 0x02800006 (len=4)
+00244300129d[PCI   ] read  PCI register 0x08 value 0x06000000 (len=4)
+00244300174d[PCI   ] read  PCI register 0x0C value 0x00000000 (len=4)
+00244300219d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00244300264d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00244300309d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00244300354d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00244300399d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00244300444d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00244300489d[PCI   ] read  PCI register 0x28 value 0x00000000 (len=4)
+00244300534d[PCI   ] read  PCI register 0x2C value 0x00000000 (len=4)
+00244300579d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00244300624d[PCI   ] read  PCI register 0x34 value 0x00000000 (len=4)
+00244300669d[PCI   ] read  PCI register 0x38 value 0x00000000 (len=4)
+00244300714d[PCI   ] read  PCI register 0x3C value 0x00000000 (len=4)
+00246514729i[CPU0  ] Enter to System Management Mode
+00246514729i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00246514733i[CPU0  ] RSM: Resuming from System Management Mode
+00249725323i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x8b
+00249769839i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x89
+00249814374i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x8b
+00249858919i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x89
+00249864335d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00249864380d[PCI   ] read  PCI register 0x04 value 0x02800006 (len=4)
+00249864425d[PCI   ] read  PCI register 0x08 value 0x06000000 (len=4)
+00249864470d[PCI   ] read  PCI register 0x0C value 0x00000000 (len=4)
+00249864515d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00249864560d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00249864605d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00249864650d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00249864695d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00249864740d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00249864785d[PCI   ] read  PCI register 0x28 value 0x00000000 (len=4)
+00249864830d[PCI   ] read  PCI register 0x2C value 0x00000000 (len=4)
+00249864875d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00249864920d[PCI   ] read  PCI register 0x34 value 0x00000000 (len=4)
+00249864965d[PCI   ] read  PCI register 0x38 value 0x00000000 (len=4)
+00249865010d[PCI   ] read  PCI register 0x3C value 0x00000000 (len=4)
+00260436361d[PCI   ] read  PCI register 0x00 value 0x8086 (len=2)
+00260436652d[PCI   ] read  PCI register 0x02 value 0x1237 (len=2)
+00260436701d[PCI   ] read  PCI register 0x04 value 0x02800006 (len=4)
+00260436746d[PCI   ] read  PCI register 0x08 value 0x06000000 (len=4)
+00260436791d[PCI   ] read  PCI register 0x0C value 0x00000000 (len=4)
+00260436836d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00260436881d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00260436926d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00260436971d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00260437016d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00260437061d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00260437106d[PCI   ] read  PCI register 0x28 value 0x00000000 (len=4)
+00260437151d[PCI   ] read  PCI register 0x2C value 0x00000000 (len=4)
+00260437196d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00260437241d[PCI   ] read  PCI register 0x34 value 0x00000000 (len=4)
+00260437286d[PCI   ] read  PCI register 0x38 value 0x00000000 (len=4)
+00260437331d[PCI   ] read  PCI register 0x3C value 0x00000000 (len=4)
+00266282838d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+00266282883d[PCI   ] read  PCI register 0x04 value 0x02800006 (len=4)
+00266282928d[PCI   ] read  PCI register 0x08 value 0x06000000 (len=4)
+00266282973d[PCI   ] read  PCI register 0x0C value 0x00000000 (len=4)
+00266283018d[PCI   ] read  PCI register 0x10 value 0x00000000 (len=4)
+00266283063d[PCI   ] read  PCI register 0x14 value 0x00000000 (len=4)
+00266283108d[PCI   ] read  PCI register 0x18 value 0x00000000 (len=4)
+00266283153d[PCI   ] read  PCI register 0x1C value 0x00000000 (len=4)
+00266283198d[PCI   ] read  PCI register 0x20 value 0x00000000 (len=4)
+00266283243d[PCI   ] read  PCI register 0x24 value 0x00000000 (len=4)
+00266283288d[PCI   ] read  PCI register 0x28 value 0x00000000 (len=4)
+00266283333d[PCI   ] read  PCI register 0x2C value 0x00000000 (len=4)
+00266283378d[PCI   ] read  PCI register 0x30 value 0x00000000 (len=4)
+00266283423d[PCI   ] read  PCI register 0x34 value 0x00000000 (len=4)
+00266283468d[PCI   ] read  PCI register 0x38 value 0x00000000 (len=4)
+00266283513d[PCI   ] read  PCI register 0x3C value 0x00000000 (len=4)
+00339994993i[HD    ] ata0-0: set transfer mode to MDMA2
+00339995310i[HD    ] ata0-1: set transfer mode to MDMA2
+00353473235i[HD    ] ata0-0: SET FEATURES subcommand 0x66 not supported, but returning success
+00353476612e[HD    ] write cmd 0xF5 (SECURITY FREEZE LOCK) not supported
+00353479852i[HD    ] ata0-0: SET FEATURES subcommand 0x02 not supported, but returning success
+00355167889i[HD    ] ata0-1: SET FEATURES subcommand 0x66 not supported, but returning success
+00355170814e[HD    ] write cmd 0xF5 (SECURITY FREEZE LOCK) not supported
+00355174054i[HD    ] ata0-1: SET FEATURES subcommand 0x02 not supported, but returning success
+00623872074i[CPU0  ] RDMSR: Read 00000000:fee00900 from MSR_APICBASE
+00623872601e[CPU0  ] RDMSR: Unknown register 0x1a0
+00871963244e[CPU0  ] WRMSR: Unknown register 0x8b
+00871963276e[CPU0  ] RDMSR: Unknown register 0x8b
+00878563590e[CPU0  ] RDMSR: Unknown register 0x11e
+00878563609e[CPU0  ] WRMSR: Unknown register 0x11e
+00900454287e[CPU0  ] RDMSR: Unknown register 0x17
+00900454323e[CPU0  ] WRMSR: Unknown register 0x8b
+00900454382e[CPU0  ] RDMSR: Unknown register 0x8b
+00900455400e[CPU0  ] WRMSR: Unknown register 0x8b
+00900455484e[CPU0  ] RDMSR: Unknown register 0x8b
+00900815663e[CPU0  ] WRMSR: Unknown register 0x8b
+00900815716e[CPU0  ] RDMSR: Unknown register 0x8b
+00901464806i[KBD   ] keyboard: scan convert turned off
+00901465483i[KBD   ] setting typematic info
+00901476120i[KBD   ] setting delay to 250 mS (unused)
+00901476120i[KBD   ] setting repeat rate to 30.0 cps (unused)
+00901787794i[KBD   ] wheel mouse mode request rejected
+00902303921i[FLOPPY] controller reset in software
+00902306909e[FLOPPY] io_write: 0x3f5: invalid floppy command 0x18
+00902307229i[FLOPPY] perpendicular mode: config=0x80
+00902307424e[FLOPPY] io_write: 0x3f5: invalid floppy command 0x18
+00907030722i[UHCI  ] new IRQ line = 5
+00907169578i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x05
+00916633487e[PAR   ] read: input mode not supported
+00931756252i[SER   ] com1: FIFO enabled
+00931756293i[SER   ] com1: FIFO enabled
+00931759383i[SER   ] com1: FIFO enabled
+00997147234i[SER   ] com1: FIFO enabled
+00997148060i[SER   ] com1: FIFO enabled
+00997149599i[SER   ] com1: FIFO enabled
+01193914514i[SER   ] com1: FIFO enabled
+09278048164e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278060068d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278060077d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278061604e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278072186d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278072210d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278073737e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278084550d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278084574d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278086101e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278096707d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278096731d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278098258e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278109133d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278109157d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278110684e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278121312d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278121336d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278122863e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278133800d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278133824d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278135351e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278146019d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278146043d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278147570e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278158249d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278158273d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278159800e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278170490d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278170514d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278172041e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278182969d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278182993d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278184520e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278195501d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278195525d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278197052e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278208055d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278208079d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278209606e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278220567d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278220591d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278222118e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278233092d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278233116d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278234643e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278245631d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278245655d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278247182e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278258181d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278258205d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278259732e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278270744d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278270768d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278272295e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278283491d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278283515d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278285042e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278297024d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278297048d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278298575e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278309465d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278309489d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278311016e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278322200d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278322224d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278323751e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278334893d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278334917d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278336444e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278347613d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278347637d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278349164e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278360118d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278360142d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278361669e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278372901d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278372925d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278374452e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278385660d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278385684d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278387211e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278398485d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278398509d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278400036e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278411271d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278411295d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278412822e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278424068d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278424092d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278425619e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278436873d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278436897d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278438424e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278449692d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278449716d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278451243e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278462562d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278462586d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278464113e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278475453d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278475477d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278477004e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278488305d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278488329d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278489856e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278501366d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278501390d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278502917e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278514435d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278514459d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278515986e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09278527518d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278527542d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09278529069e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09281562902i[BXVGA ] VBE set bpp (32)
+09281562921i[BXVGA ] VBE set xres (640)
+09281562940i[BXVGA ] VBE set yres (480)
+09281563023i[BXVGA ] VBE enabling x 640, y 480, bpp 32, 1228800 bytes visible
+09281563023i[WINGUI] dimension update x=640 y=480 fontheight=0 fontwidth=0 bpp=32
+09281563536e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09281573564e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09281584600d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09281584626d[PCI   ] read  PCI register 0x00 value 0x12378086 (len=4)
+09281586153e[CPU0  ] check_cs(0x000b): non-conforming code seg descriptor dpl != cpl, dpl=0, cpl=3
+09395586999i[KBD   ] setting typematic info
+09395600240i[KBD   ] setting delay to 500 mS (unused)
+09395600240i[KBD   ] setting repeat rate to 30.0 cps (unused)
+11078647484i[KBD   ] setting typematic info
+11078662733i[KBD   ] setting delay to 500 mS (unused)
+11078662733i[KBD   ] setting repeat rate to 30.0 cps (unused)
+14769977612i[KBD   ] setting typematic info
+14770000238i[KBD   ] setting delay to 500 mS (unused)
+14770000238i[KBD   ] setting repeat rate to 30.0 cps (unused)
+15755733553p[ACPI  ] >>PANIC<< ACPI control: soft power off
+15755733553i[CPU0  ] CPU is in protected mode (active)
+15755733553i[CPU0  ] CS.mode = 32 bit
+15755733553i[CPU0  ] SS.mode = 32 bit
+15755733553i[CPU0  ] EFER   = 0x00000800
+15755733553i[CPU0  ] | EAX=00002001  EBX=ffdff120  ECX=00002000  EDX=0000b004
+15755733553i[CPU0  ] | ESP=f7a25bf8  EBP=f7a25c24  ESI=00000800  EDI=00000000
+15755733553i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af pf cf
+15755733553i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+15755733553i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+15755733553i[CPU0  ] |  DS:0023( 0004| 0|  3) 00000000 ffffffff 1 1
+15755733553i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+15755733553i[CPU0  ] |  ES:0023( 0004| 0|  3) 00000000 ffffffff 1 1
+15755733553i[CPU0  ] |  FS:0030( 0006| 0|  0) ffdff000 00001fff 1 1
+15755733553i[CPU0  ] |  GS:0000( 0000| 0|  0) 00000000 00000000 0 0
+15755733553i[CPU0  ] | EIP=806e3862 (806e3860)
+15755733553i[CPU0  ] | CR0=0xe0010031 CR2=0x012e8000
+15755733553i[CPU0  ] | CR3=0x00a96000 CR4=0x000006f9
+15755733553i[CPU0  ] 0x00000000806e3860>> out dx, ax : 66EF
+15755733553d[PCI   ] Exit
+15755733553i[CMOS  ] Last time is 1661391646 (Thu Aug 25 03:40:46 2022)
+15755733553i[      ] restoring default signal behavior
+15755733553i[SIM   ] quit_sim called with exit code 1

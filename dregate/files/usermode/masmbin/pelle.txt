@@ -1,0 +1,103 @@
+---------------------------------------------------------------------------
+
+Pelle Orinius has given permission to include a number of his high tech
+tools in the MASM32 Project.
+
+With current testing the linker produces more efficient PE headers and
+generally results in a smaller EXE file.
+
+With the current build style batch files used in MASM32, the main difference
+when using PoLink.exe instead of the Microsoft Link.exe is that the
+resource file must be appended as a RES file, not an OBJ file converted
+by CVTRES.EXE.
+
+Below are the available command line options for PoLink.exe, Porc.exe
+and PoLib.exe.
+
+---------------------------------------------------------------------------
+
+Pelles Library Manager, Version 4.00.0
+Copyright (c) Pelle Orinius 1997-2005
+
+Syntax:
+POLIB [options] {files | @commandfile}
+
+Options:
+/DEF:filename      Build import library from module-definition file
+/EXPLODE           Create object files for all members
+/EXTRACT:member    Create object file for the given member
+/LIST              List all member names
+/MACHINE:type      Set target machine type: ARM, IX86, or X86
+/MAKEDEF:filename  Build module-definition file from import library
+/NOUND             Don't add underscore
+/OLDIMPLIB         Create import library in old format
+/OUT:filename      Name the output file
+/REMOVE:member     Remove the given member
+/VERBOSE           Display more information
+
+---------------------------------------------------------------------------
+
+POLINK [options] [files] [@commandfile]
+
+Options:
+/ALIGN:#
+/ALLOWBIND[:NO]
+/BASE:address
+/DEBUG[:NO]
+/DEBUGTYPE:{CV|COFF|BOTH}
+/DEF:filename
+/DEFAULTLIB:library
+/DELAY:{NOBIND|UNLOAD}
+/DELAYLOAD:dll
+/DLL
+/DRIVER[:{UPONLY|WDM}]
+/ENTRY:symbol
+/EXPORT:symbol[=symbol][,@ordinal][,DATA]
+/FIXED[:NO]
+/FORCE:MULTIPLE
+/HEAP:reserve[,commit]
+/IMPLIB:filename
+/INCLUDE:symbol
+/LARGEADDRESSAWARE[:NO]
+/LIBPATH:path
+/MACHINE:{ARM|IX86|X86}
+/MAP[:filename]
+/MAPINFO:{EXPORTS|FIXUPS|LINES}
+/MERGE:from=to
+/NODEFAULTLIB
+/NOENTRY
+/OLDIMPLIB
+/OPT:{REF|NOREF|WIN98|NOWIN98}
+/OSVERSION:#[.##]
+/OUT:filename
+/RELEASE
+/SECTION:name,[E][R][W][S][D][K][P]
+/STACK:reserve[,commit]
+/STUB:filename
+/SUBSYSTEM:{NATIVE|WINDOWS|CONSOLE|WINDOWSCE}[,#[.##]]
+/SWAPRUN:{NET|CD}
+/TSAWARE[:NO]
+/VERBOSE
+/VERSION:#[.##]
+/WS:AGGRESSIVE
+
+---------------------------------------------------------------------------
+
+Pelles Resource Compiler, Version 4.00.0
+Copyright (c) Pelle Orinius 1997-2005
+
+Syntax:
+PORC [options] input[.RC]
+
+Options:
+/C<cp>             Define codepage for NLS conversion (default: 1252)
+/D<name>[=<text>]  Define a symbol
+/E                 Preprocess only (to stdout)
+/Fo<file>          Rename the output file (default: input.RES)
+/I<path>           Add a search path for #include files
+/L<langid>         Set default language ID
+/R                 Create a RES file (default action)
+/V                 Display more information
+/X                 Don't search standard places for #include files
+
+---------------------------------------------------------------------------

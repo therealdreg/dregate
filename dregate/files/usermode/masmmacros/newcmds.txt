@@ -1,0 +1,44 @@
+Additional conversions added to the MACROS.ASM file for MASM32.
+These conversions require the MSVCRT library and include file that were
+introduced in service pack 2 for the current version of MASM32.
+
+The following macros are used in the function position so that the result
+can be treated like a normal offset.
+
+    mov target, macroname(value)
+
+Numeric to text conversions.
+
+    ubyte$
+    sbyte$
+    xbyte$
+    uword$
+    sword$
+    xword$
+    udword$
+    sdword$
+    xdword$
+    uqword$
+    sqword$
+    xqword$
+    real4$
+    real8$
+    real10$
+
+Text to numeric conversions.
+
+    a2ub
+    a2sb
+    h2ub
+    a2uw
+    a2sw
+    h2uw
+    a2ud
+    a2sd
+    h2ud
+    a2uq
+    a2sq
+    h2uq
+    a2r4
+    a2r8
+    a2r10

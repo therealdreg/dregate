@@ -1,0 +1,198 @@
+
+FREEWARE:
+
+    This software may NOT be distributed or bundled with any product
+    that is sold for commercial profit without the explicit permission
+    of the author. In cases where the author has consented, the PKUNZIP(tm)
+    authentication message which normally reads :
+
+        Authentic files Verified!   # EYC098
+        Tenth Planet Software International
+
+    will additionally indicate the commercial entity to which permission
+    has been granted. If authentication is not present, please contact
+    the author to obtain a bona fide copy.
+
+    The term FREEWARE refers only to the mode of distribution, the
+    executables and source are COPYRIGHTED. Reuse of this code in a
+    commercial application is NOT permitted.
+
+Disclaimer:
+
+    The author hereby disclaims all warranties relating to this software,
+    whether express or implied, including without limitation any implied
+    warranties of merchantability or fitness for a particular purpose.
+    The author will not be liable for any special, incidental,
+    consequential, indirect or similar damages due to loss of data or any
+    other reason, even if the author or an agent of the author has been
+    advised of the possibility of such damages.  In no event shall the
+    author's liability for any damages ever exceed the price paid for
+    the software, regardless of the form of the claim.  The person
+    using the software bears all risk as to the quality and performance
+    of the software.
+
+DumpPE:
+
+    This tool was designed to examine the internal content of Portable
+    Executable (PE) files or .DBG COFF symbolic debugging files used
+    with Windows '95 and the Intel x86 version of Windows NT. PE files
+    use 32-bit code in a semi flat model, and consist of several sections.
+    Structures with in the PE file are defined within a fixed size header
+    with variable length components described in directory entries. These
+    directory entries point to data contained within sections of the PE
+    file image, and include things like Import, Export, Relocation/Fixup,
+    Resource and debugging information. COFF symbolic debugging information
+    may exist in separate .DBG file, or as often is the case with Windows
+    '95 a .SYM file in a pre-COFF format used by IBM and Microsoft.
+    Microsoft also now uses .PDB (Program Database) files, the linkers from
+    MSVC 2.x, 4.x & 5.0 combine Codeview information into a PDB file to
+    support incremental linking. Most commercial applications lack the
+    debugging information completely.
+
+    In order to expedite the loading process files have a preferred load
+    address (or base address). If a file can be loaded at this address
+    no relocations need to occur. Some parts of the Windows '95 Kernel have
+    a fixed base address, with each component having its own address, and
+    the relocations removed completely from the file. Such files cannot be
+    loaded at any other address. The technique of changing the base address
+    is called rebasing. Another method used to speed loading is the binding
+    to specific import libraries, each build of a .DLL is uniquely date
+    coded and has its own .LIB file, when the linker links these imports
+    it gives the loader hint numbers which are indexes for specific named
+    functions in the exporting .DLL (this is not the same as an ordinal).
+    If the version of the .DLL in your system matches the version the linker
+    used the loader will complete the load time fixes faster. If however
+    the versions don't match the loader can still do the load time fixes,
+    but will have to do so by searching and matching function names, the
+    load can fail at this point if the function name is not present. The
+    technique of changing the bindings is called rebinding.
+
+    The use of ordinals in PE files typically occurs when the use of the
+    function is being hidden, an undocumented feature perhaps. KERNEL32
+    from Windows '95 has quite a few as do many other system libraries,
+    if you tried to use the same ordinals under Windows NT things would
+    not work as expected. System libraries are not interchangeable between
+    Window '95 and NT, so you can't take WNASPI32.DLL from Windows '95
+    and copy it to Windows NT and expect to get 32bit ASPI support.
+
+    Windows NT provides a means of forwarding, where the exports of a .DLL
+    can point to an import of a different .DLL. KERNEL32 from Windows NT
+    has several functions that are forwarded to NTDLL, KERNEL32.HeapAlloc
+    for example is forwarded to NTDLL.RtlAllocateHeap. Windows '95 to my
+    knowledge does not provide forwarding.
+
+    A rough disassembler has been added to release 1.21. The disassembler
+    will use symbols and debug info contained within the PE executable as
+    well as those within .SYM, .DBG & .PDB files with the same base name
+    stored in the same directory. Two passes of the code sections are made
+    so that branch and call locations can be displayed smartly. There is
+    no attempt at this point to do code/data analysis, so jump tables and
+    embedded data are likely to degrade the quality of the output.
+
+    The use of symbols (which come with the system components of NT) will
+    dramatically improve the output quality. Optimization Mapping (OMAP)
+    used by Microsoft to reduce the "Working Set" paging requirements is
+    also supported. OMAP is a post compilation reordering of an executable
+    which requires the translation through a supplied table of all debug
+    and symbolic information. A large number of NT components use this
+    OMAP data, and it appears that Codeview symbols get corrupted in the
+    process, so only COFF symbols are used when OMAP translation is used.
+
+    Release 1.22 has an experimental KNI (Katmai New Instructions) and
+    3DNow! disassembler.
+
+    Release 1.23 has been compiled as a Win32 Console application, NT is
+    currently my OS of choice and the PMODE/W DOS Extender no longer seems
+    to be actively supported.
+
+    If you found this tool to be mildly useful or entertaining please send
+    me some Email, positive feedback is always good to get and makes writing
+    FREEWARE worth while. If you didn't like this tool, discard it, and keep
+    your sentiments to yourself.
+
+
+Clive Turvey, February 7, 1999.
+DeKalb, IL., USA & Southampton, ENGLAND.
+
+Email : clive@tbcnet.com
+
+URL   : http://www.tbcnet.com/~clive
+
+------------------------------------------------------------------------------
+
+Usage output from DumpPE
+
+DumpPE v1.23 (c) Copyright Tenth Planet Software Intl., C Turvey 1995-1999.
+			   All rights reserved. Non-Commercial use only.
+
+ ====     ===			This FREEWARE product was written by Clive
+  \\      / th			Turvey, an English Electronics Engineer.
+   \\    /
+    \\  /   Planet		It is designed to replace the W32DUMP
+     \\/     Software		utility written by Andrew Schulman.
+     /\\      International
+    /  \\			If you like the software, or find a problem
+   /    \\   clive@tbcnet.com	post some Email to clive@tbcnet.com
+  /      \\
+ ===     ====
+
+Usage : DumpPE [options] <Win32 PE Portable Executable>
+
+Options :	-quiet		Suppress copyright string
+		-disasm		Rough disassembly
+		-reloc		Display base relocations
+		-checksum	Calculate Checksum
+		-resource	Display resource section
+		-nosym		Suppress symbolic output
+
+------------------------------------------------------------------------------
+
+I have finished writing Windows Source Version 3, which is now available
+from V Communications Inc. Versions one & two of Windows Source were
+written by Andrew Schulman.
+
+What is Windows Source?
+
+Windows Source is an add-on to V Communications' Sourcer disassembler
+which preprocesses executable, dynamic link library, device drivers and
+VxD files for Windows 3.x, Windows '95 & Windows NT. It also provides
+support for OS/2 1.x, 2.x & Warp.
+
+Where possible symbolic debug information included in separate .SYM,
+.DBG, .PDB files, or included in Codeview or COFF debugging sections.
+
+The version of DumpPE supplied with Windows Source differs from the
+version supplied here in that it also generates definition files
+which are used by Sourcer to enhance the quality of the disassembly.
+This definition file can be modified and extended to further enhance
+the listing by adding your own labels and comments.
+
+Although you can disassemble PE executables with DUMPBIN (LINK -DUMP)
+the quality will be fairly low, much as it would be with earlier tools
+like DEBUG (8086) or SYMDEB (80286). To examine anything beyond a few
+subroutines Sourcer & Windows Source will make a much better job, labeling
+jump destinations and subroutines.
+
+Windows Source Web Page : http://www.tbcnet.com/~clive/vcomwinp.html
+
+------------------------------------------------------------------------------
+
+For information about V Communications software :
+
+Sourcer, Bios Preprocessor, Windows Source,
+System Commander, Partition Commander,
+
+V Communications, Inc., 2290 North First Street,
+Suite 101, San Jose, CA 95131-2017.
+
+Orders: 800-648-8266 (USA & Canada)
+Phone : 408-965-4000
+Fax   : 408-965-4014
+Email : sales@v-com.com
+URL   : http://www.v-com.com
+
+These tools are highly recommended, be sure to let them know Clive Turvey
+sent you.
+
+------------------------------------------------------------------------------
+

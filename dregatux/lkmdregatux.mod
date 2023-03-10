@@ -1,0 +1,2 @@
+/root/dregatux/lkmdregatux.o
+

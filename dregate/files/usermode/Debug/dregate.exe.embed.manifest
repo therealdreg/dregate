@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><assemblyIdentity version="1.0.0.0" name="someProgram.EXE" type="win32"></assemblyIdentity><ms_asmv3:trustInfo xmlns:ms_asmv3="urn:schemas-microsoft-com:asm.v3" xmlns="urn:schemas-microsoft-com:asm.v3"><ms_asmv3:security xmlns:ms_asmv3="urn:schemas-microsoft-com:asm.v3"><requestedPrivileges>
+<requestedExecutionLevel level="requireAdministrator"></requestedExecutionLevel>
+</requestedPrivileges></ms_asmv3:security></ms_asmv3:trustInfo></assembly>
